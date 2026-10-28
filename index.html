@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>清水・駿河湾クルーズ 日帰り旅行の見どころ紹介</title>
   <style>
+    .spot-body {
+  padding: 16px 20px 24px;
+  flex-grow: 1;
+  display: flex;             /* थपिएको: भित्रका तत्त्वहरूलाई मिलाउन */
+  flex-direction: column;    /* थपिएको: माथिबाट तल लाइन मिलाउन */
+}
+
+.spot-text {
+  font-size: 0.95rem;
+  color: #555555;
+  flex-grow: 1;              /* थपिएको: यसले खाली ठाउँ भर्छ र बटनलाई तल धकेल्छ */
+}
+
+.spot-btn {
+  margin-top: auto;          /* थपिएको: बटनलाई कार्डको फेदमा तान्छ */
+  padding-top: 10px;
+  font-weight: bold;
+  color: #0077b6;
+  text-align: right;
+}
+    .spot-link-text {
+  display: block;      /* यसले नयाँ लाइनमा लैजान्छ */
+  margin-top: 8px;     /* माथिल्लो लाइनसँग अलिकति ग्याप दिन्छ */
+  color: #0077b6;      /* निलो रङ बनाउन चाहेमा */
+  font-weight: bold;   /* अलिकति बाक्लो अक्षर बनाउन चाहेमा */
+}
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: "Helvetica Neue", Arial, sans-serif; line-height: 1.7; color: #333333; background-color: #f4f7f9; }
     
@@ -13,9 +39,9 @@
       background-size: cover; background-position: center;
       color: #ffffff; text-align: center; padding: 100px 20px;
     }
-    .hero-sub { font-size: 0.95rem; letter-spacing: 0.1em; opacity: 0.9; margin-bottom: 8px; }
+    .hero-sub { font-size: 1.2rem; letter-spacing: 0.1em; opacity: 0.9; margin-bottom: 8px; }
     .hero-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 12px; }
-    .hero-desc { font-size: 1rem; opacity: 0.95; }
+    .hero-desc { font-size: 1.2rem; opacity: 0.95; }
 
     .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
     .section-title { text-align: center; font-size: 1.8rem; color: #0077b6; margin-bottom: 30px; position: relative; }
@@ -47,9 +73,9 @@
 <body>
 
   <header class="hero">
-    <p class="hero-sub">中部コンピュータ・パティシエ専門学校</p>
+    <p class="hero-sub">中部コンピュータ・パティシエ専門学校秋の恒例行事</p>
     <h1 class="hero-title">清水・駿河湾クルーズ日帰り旅行</h1>
-    <p class="hero-desc">歴史と富士の絶景、海の幸を満喫する静岡・清水の旅</p>
+    <p class="hero-desc">日本の文化と歴史を学ぶ旅</p>
   </header>
 
   <div class="container">
@@ -68,46 +94,59 @@
       <h2 class="section-title">旅のハイライト・見どころ</h2>
       <p style="text-align: center; margin-bottom: 25px; color: #666;">※各スポットをクリックすると、詳細ページが開きます。</p>
       
-      <div class="spots-grid">
+     <div class="spots-grid">
 
-        <!-- スポット 1 (detail1.html खुल्ने) -->
+        <!-- スポット 1 -->
         <a href="detail1.html" class="spot-card">
           <span class="spot-tag">グルメ & ショッピング</span>
           <div class="spot-body">
-            <img src="image1.jpg" alt="はとばキッチン" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <img src="image/image1.jpg" alt="はとばキッチン" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
             <h3 class="spot-title">エスパルスドリームプラザ「はとばキッチン」</h3>
-            <p class="spot-text">清水港のヨットハーバーを目の前に望む複合商業施設。大人気のビュッフェランチを堪能します。Clickして詳細へ ➔</p>
+            <p class="spot-text">清水港のヨットハーバーを目の前に望む複合商業施設。大人気のビュッフェランチを堪能します。</p>
+            <div class="spot-btn">Clickして詳細へ ➔</div>
           </div>
         </a>
 
-        <!-- スポット 2 (detail2.html खुल्ने) -->
+        <!-- スポット 2 -->
         <a href="detail2.html" class="spot-card">
           <span class="spot-tag">絶景クルーズ</span>
           <div class="spot-body">
-            <img src="image2.jpg" alt="駿河湾クルーズ" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <img src="image/image2.jpg" alt="駿河湾クルーズ" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
             <h3 class="spot-title">駿河湾クルーズ（清水港）</h3>
-            <p class="spot-text">潮風を感じながら約40分間の船旅へ。富士山のパノラマビューを満喫。Clickして詳細へ ➔</p>
+            <p class="spot-text">潮風を感じながら約40分間の船旅へ。富士山のパノラマビューを満喫。</p>
+            <div class="spot-btn">Clickして詳細へ ➔</div>
           </div>
         </a>
 
-        <!-- スポット 3 (detail3.html खुल्ने) -->
+        <!-- スポット 3 -->
         <a href="detail3.html" class="spot-card">
           <span class="spot-tag">世界文化遺産</span>
           <div class="spot-body">
-            <img src="image3.jpg" alt="三保の松原" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <img src="image/image3.jpg" alt="三保の松原" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
             <h3 class="spot-title">三保の松原（みほのまつばら）</h3>
-            <p class="spot-text">青い海と緑の松林、富士山の絶景名所。「羽衣伝説」の舞台を散策。Clickして詳細へ ➔</p>
+            <p class="spot-text">青い海と緑の松林、富士山の絶景名所。「羽衣伝説」の舞台を散策。</p>
+            <div class="spot-btn">Clickして詳細へ ➔</div>
           </div>
         </a>
 
-        <!-- スポット 4 (detail4.html खुल्ने) -->
+        <!-- スポット 4 -->
         <a href="detail4.html" class="spot-card">
           <span class="spot-tag">国宝・パワースポット</span>
           <div class="spot-body">
-            <img src="image4.jpg" alt="久能山東照宮" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <img src="image/image4.jpg" alt="久能山東照宮" style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
             <h3 class="spot-title">久能山東照宮（くのうざんとうしょうぐう）</h3>
-            <p class="spot-text">徳川家康公が眠る国宝の社殿。歴史とパワーあふれる名所を見学。Clickして詳細へ ➔</p>
+            <p class="spot-text">徳川家康公が眠る国宝の社殿。歴史とパワーあふれる名所を見学。</p>
+            <div class="spot-btn">Clickして詳細へ ➔</div>
           </div>
+        </a>
+
+      </div>
+        </a>
+
+      </div>
+        </a>
+
+      </div>
         </a>
 
       </div>
